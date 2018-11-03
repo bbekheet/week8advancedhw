@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import operator
+from sty import fg, bg, ef, rs, Rule, Render
 
 
 operators = {
@@ -31,7 +32,7 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print("Result: ", result)
+        print(fg.red +"Result: " +fg.rs,result)
 
 if __name__ == '__main__':
     main()
