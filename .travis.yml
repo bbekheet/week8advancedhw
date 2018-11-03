@@ -4,6 +4,7 @@ python:
 install:
   - pip install coveralls
   - pip install coverage
+  - pip install sty
 script:
   - python3 -m unittest
   - coverage run -m unittest
